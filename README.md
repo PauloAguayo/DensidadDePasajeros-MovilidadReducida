@@ -12,8 +12,7 @@ Los requisitos para el funcionamiento de del código son los siguientes:
 - Tensorflow 1.14
 - OpenCV
 - Shapely
-- 
-
+- Matplotlib
 
 
 # Parser
