@@ -6,3 +6,24 @@ La red fue entrenada a través de Google Cloud Platform con una tarjeta GPU Tesl
 
 
 # Instalación
+Los requisitos para el funcionamiento de del código son los siguientes:
+
+- python >=3 
+- Tensorflow 1.14
+- OpenCV
+- Shapely
+- 
+
+
+
+# Parser
+El programa posee 8 variables parser, de las cuales sólo 3 son obligatorias. Se describen a continuación:
+
+- '-m' (obligatoria): Ruta y nombre del modelo ".pb".
+- '-l' (obligatoria): Ruta y nombre de las etiquetas o labels ".pbtxt".
+- '-i' (obligatoria): Ruta y nombre de la imagen.
+- '-o' (opcional): Ruta y/o nombre de la imagen de salida.
+- '-wr' (opcional): Valor en metros del ancho de una silla de ruedas. Su valor por default es 0.8 metros.
+- '-ws' (opcional): Valor en metros del largo lateral de una silla de ruedas. Su valor por default es 1.2 metros.
+- '-c' (opcional): Probabilidad de detección de objetos. Default 0.8.
+- '-d' (opcional): Discriminante de distancias al centroide del polígono. Default 0.7.
